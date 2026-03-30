@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincenzio Dhammattha Kurniawan - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="New folder/4.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">vincenzio.</div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+                <a href="#contact" class="nav-contact-btn">Contact →</a>
+            </div>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="profile-avatar-wrapper">
+            <img src="New folder/1.jpg" alt="Profile Photo" class="profile-avatar-img" onerror="this.parentElement.innerHTML='<div class=\'profile-avatar-placeholder\'>👨‍💻</div>'">
+        </div>
+        <div class="hero-greeting">Hi! I'm Vincenzio Dhammattha Kurniawan 👋</div>
+        <h1 class="hero-title">frontend web developer<br>based in palembang.</h1>
+        <p class="hero-description">
+            I am a frontend developer from palembang, Indonesia with professional experience in web development
+            and creating modern, responsive websites.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">contact me →</a>
+            <a href="#" class="btn-secondary" download>my resume ↓</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="New folder/2.jpg" alt="About Me Photo" class="about-img-real" onerror="this.outerHTML='<div class=\'about-img-placeholder\'>🖥️</div>'">
+            <div class="badge">FRONTEND<br>DEVELOPER 👨‍💻</div>
+        </div>
+        <div class="about-content">
+            <h2 class="section-title">About me</h2>
+            <p class="about-text">
+                I am an experienced Frontend Developer with professional expertise in the field.
+                Throughout my career, I have had the privilege of collaborating with various
+                organizations, contributing to their success and growth.
+            </p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-icon">&lt;/&gt;</div>
+                    <h3>Languages</h3>
+                    <p>HTML, CSS, JavaScript<br>React Js, Next Js</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>B. Tech in Computer<br>Science</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">💼</div>
+                    <h3>Projects</h3>
+                    <p>Built more than 20 projects</p>
+                </div>
+            </div>
+            <div class="tools">
+                <h4>Tools I use</h4>
+                <div class="tools-list">
+                    <div class="tool-icon" title="VS Code">💻</div>
+                    <div class="tool-icon" title="Firebase">🔥</div>
+                    <div class="tool-icon" title="Node.js">🟢</div>
+                    <div class="tool-icon" title="Figma">🎨</div>
+                    <div class="tool-icon" title="JavaScript">🔶</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <p class="section-label">What I offer</p>
+        <h2 class="section-title">My services</h2>
+        <p class="section-desc">
+            I am a frontend developer from Palembang, Indonesia with experience in creating
+            beautiful and functional websites.
+        </p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Web design</h3>
+                <p>Creating modern, responsive websites tailored to your brand and business goals.</p>
+                <a href="#contact" class="read-more">Read more →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Mobile app</h3>
+                <p>Developing intuitive mobile interfaces that deliver seamless user experiences.</p>
+                <a href="#contact" class="read-more">Read more →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX design</h3>
+                <p>Designing user-centered interfaces with thoughtful flows and visual hierarchy.</p>
+                <a href="#contact" class="read-more">Read more →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✏️</div>
+                <h3>Graphics design</h3>
+                <p>Crafting visual assets and brand identities that communicate clearly.</p>
+                <a href="#contact" class="read-more">Read more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="work">
+        <div class="portfolio-header">
+            <p class="section-label">My portfolio</p>
+            <h2 class="section-title">My latest work</h2>
+            <p class="section-desc">
+                Welcome to my web development portfolio! Explore a collection of projects showcasing my
+                expertise in front-end development.
+            </p>
+        </div>
+
+        <div class="portfolio-grid" id="projectGrid">
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/kalkulator/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">kalkulator</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/8%20September/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">reset</h3>
+                    <p class="project-category">Mobile App</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/16%20September/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">close</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/top%20up%20pulsa/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">isi pulsa</h3>
+                    <p class="project-category">UI/UX Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/auto%20cliker/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">auto clicker</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/scroll/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">scroll</h3>
+                    <p class="project-category">Mobile App</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/16%20september%202/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">modal</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/26%20Agustus/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">spotify</h3>
+                    <p class="project-category">Mobile App</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/28%20Juli/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">nilai 3</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/28%20Oktober/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">carousel</h3>
+                    <p class="project-category">UI/UX Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/gambar/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">gambar</h3>
+                    <p class="project-category">Mobile App</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+            <a class="project-card" href="file:///C:/Users/chatg/Documents/coding/operator%20suhu/index.html" target="_blank" rel="noopener">
+                <div class="project-image" style="background: linear-gradient(135deg, #f77062 0%, #fe5196 100%);"></div>
+                <div class="project-info">
+                    <h3 class="project-title">konversi satuan</h3>
+                    <p class="project-category">Web Design</p>
+                    <span class="project-link">↗</span>
+                </div>
+            </a>
+        </div><!-- /#projectGrid -->
+
+        <div class="show-more-container">
+            <button class="btn-show-more" id="showMoreBtn">
+                Show more <span class="arrow">↓</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <p class="section-label">Connect with me</p>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-desc">
+            I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.
+        </p>
+        <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <input type="text" placeholder="Enter your name" class="form-input" required>
+                <input type="email" placeholder="Enter your email" class="form-input" required>
+            </div>
+            <textarea placeholder="Enter your message" class="form-textarea" required></textarea>
+            <button type="submit" class="btn-primary">Send Message ✉️</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Vincenzio Dhammattha Kurniawan · Built with ❤️ in Palembang</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
